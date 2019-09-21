@@ -5,8 +5,8 @@ Write-Host "****************************************"
 
 param
 (
-    [bool]$network = $false,
-[bool]$info = $false
+    	[Parameter(Mandatory=$true)][bool]$network = $false,
+	[Parameter(Mandatory=$true)][bool]$info = $false
 )
 
 
