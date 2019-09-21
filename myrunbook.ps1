@@ -1,13 +1,14 @@
 #auto test dummy powershell script
 
+Param
+(
+    	[Parameter(Mandatory=$false)][bool]$network = $false,
+	[Parameter(Mandatory=$false)][bool]$info = $false
+)
+
+
 Write-Host "*** This is an Azure Automation Test ***"
 Write-Host "****************************************"
-
-param
-(
-    	[Parameter(Mandatory=$true)][bool]$network = $false,
-	[Parameter(Mandatory=$true)][bool]$info = $false
-)
 
 
 if($network) {
